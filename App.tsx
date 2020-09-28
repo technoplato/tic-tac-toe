@@ -1,21 +1,20 @@
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React from "react"
+import { SafeAreaView, StyleSheet } from "react-native"
+import Game from "./src/Game"
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Change this text and deploy and then will it blow your mind????</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+    <SafeAreaView style={styles.container}>
+      <Game type={"local"} size={3} />
+    </SafeAreaView>
+  )
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'chocolate',
-    alignItems: 'center',
-    justifyContent: 'center',
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundColor: "#bd9ccd",
   },
-});
+})
