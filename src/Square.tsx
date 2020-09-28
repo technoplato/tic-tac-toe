@@ -33,7 +33,6 @@ const Square: React.FC<SquareProps> = ({
     styles.square,
     { width: boxSize, height: boxSize },
   ]
-  console.log("square is rendering")
   return (
     <TouchableOpacity onPress={handleClick} style={squareStyles}>
       <Text style={styles.text}>{value}</Text>
