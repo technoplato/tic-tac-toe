@@ -3,8 +3,10 @@
 ### Run
 
 Clone Repo
-`yarn`
-`yarn start`
+```
+yarn
+yarn start
+```
 
 ### Assumptions / Constraints
 
