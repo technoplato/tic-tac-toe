@@ -29,7 +29,7 @@ The constraints of the application in its current state are that gameplay is loc
 ### Areas for Improvement / Known Issues
 
 - Get rid of all magic numbers
-- Functional styling on web (web link removed as currently unusable)
+- Functional styling on web (web link ~removed as currently unusable~ added back for comical effect)
 - Could memoize `Square` component to avoid rerenders on each selection.
 - Could be slightly more performant and flexible in determining winner. If this game was much more graphics intensive, perhaps that would be something to consider. This algorithm currently only works for 3x3 boards.  
 - Remove hard coded height for board and resolve bug where board would grow by a few pixels as Squares were filled
