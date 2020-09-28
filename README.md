@@ -1,3 +1,11 @@
+### Demo
+
+### Run
+
+Clone Repo
+`yarn`
+`yarn start`
+
 ### Assumptions / Constraints
 
 I tried to avoid making any unnecessary assumptions other than following the standard rules of Tic Tac Toe. 
