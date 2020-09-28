@@ -1,7 +1,7 @@
 import Board from "./Board"
 
 import React from "react"
-import { StyleSheet, View, Text, Button } from "react-native"
+import { StyleSheet, View, Button } from "react-native"
 import { GameType } from "./types"
 import { useTicTacToe } from "./useTicTacToe"
 import GameStatus from "./GameStatus"
@@ -15,8 +15,8 @@ const styles = StyleSheet.create({
 })
 
 type GameProps = {
-  type: GameType
-  dimension: number
+  type?: GameType
+  dimension?: number
 }
 
 const Game: React.FC<GameProps> = ({

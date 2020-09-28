@@ -10,7 +10,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
   },
-  text: {
+  symbol: {
     fontSize: 40,
     color: "#a8b8d4",
   },
@@ -34,7 +34,7 @@ const Square: React.FC<SquareProps> = ({
   ]
   return (
     <TouchableOpacity onPress={handleClick} style={squareStyles}>
-      <Text style={styles.text}>{value}</Text>
+      <Text style={styles.symbol}>{value}</Text>
     </TouchableOpacity>
   )
 }
