@@ -1,6 +1,9 @@
 ### Demo
 ![renameme](https://user-images.githubusercontent.com/6922904/94445492-7a531a00-0175-11eb-9828-f4979ae930e0.gif)
 
+### Clown Version (styling didn't translate well from Native --> Expo Web)
+[Play on Web Now!](https://zealous-wright-c508cd.netlify.app/)
+
 ### Run
 
 ```
