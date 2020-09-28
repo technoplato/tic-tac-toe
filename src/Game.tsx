@@ -26,8 +26,11 @@ const Game: React.FC<GameProps> = ({ type = "local", size = 3 }) => {
 
   return (
     <View style={styles.container}>
-      <Text>Turn: {turn}</Text>
-      <Text>Winner: {winner}</Text>
+      {winner ? (
+        <Text>Winner: {winner}</Text>
+      ) : (
+        <Text>Turn: {turn}</Text>
+      )}
       <Board {...{ board, mark }} />
       <Button onPress={reset} title={"Reset"} />
     </View>
