@@ -3,8 +3,9 @@
 
 ### Run
 
-Clone Repo
 ```
+git clone https://github.com/technoplato/tic-tac-toe.git
+cd tic-tac-toe
 yarn
 yarn start
 ```
