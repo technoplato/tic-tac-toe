@@ -12,7 +12,6 @@ const styles = StyleSheet.create({
   },
   text: {
     fontSize: 40,
-    padding: 12,
     color: "#a8b8d4",
   },
 })

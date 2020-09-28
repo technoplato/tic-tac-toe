@@ -15,13 +15,16 @@ const styles = StyleSheet.create({
 
 type GameProps = {
   type: GameType
-  size: number
+  dimension: number
 }
 
-const Game: React.FC<GameProps> = ({ type = "local", size = 3 }) => {
+const Game: React.FC<GameProps> = ({
+  type = "local",
+  dimension = 3,
+}) => {
   const { board, winner, turn, mark, reset } = useTicTacToe(
     type,
-    size,
+    dimension,
   )
 
   return (

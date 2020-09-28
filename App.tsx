@@ -5,7 +5,7 @@ import Game from "./src/Game"
 export default function App() {
   return (
     <SafeAreaView style={styles.container}>
-      <Game type={"local"} size={3} />
+      <Game type={"local"} dimension={3} />
     </SafeAreaView>
   )
 }
