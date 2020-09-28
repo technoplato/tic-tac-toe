@@ -51,6 +51,9 @@ export const useTicTacToe: UseTicTacToe = (
     setBoard(initialBoard(size))
   }
 
+  const draw =
+    board.filter((square) => square === null).length === 0 && !winner
+
   return {
     board,
     canMark,
@@ -58,5 +61,6 @@ export const useTicTacToe: UseTicTacToe = (
     reset,
     turn,
     winner,
+    draw,
   } as TicTacToe
 }

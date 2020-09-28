@@ -21,6 +21,7 @@ export type TicTacToe = {
   canMark: CanMark
   mark: Mark
   reset: Reset
+  draw: boolean
 }
 
 export type UseTicTacToe = (type: GameType, size: number) => TicTacToe

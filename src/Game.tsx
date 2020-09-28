@@ -4,6 +4,7 @@ import React from "react"
 import { StyleSheet, View, Text, Button } from "react-native"
 import { GameType } from "./types"
 import { useTicTacToe } from "./useTicTacToe"
+import GameStatus from "./GameStatus"
 
 const styles = StyleSheet.create({
   container: {
@@ -22,18 +23,14 @@ const Game: React.FC<GameProps> = ({
   type = "local",
   dimension = 3,
 }) => {
-  const { board, winner, turn, mark, reset } = useTicTacToe(
+  const { board, winner, turn, mark, reset, draw } = useTicTacToe(
     type,
     dimension,
   )
 
   return (
     <View style={styles.container}>
-      {winner ? (
-        <Text>Winner: {winner}</Text>
-      ) : (
-        <Text>Turn: {turn}</Text>
-      )}
+      <GameStatus {...{ winner, turn, draw }} />
       <Board {...{ board, mark }} />
       <Button onPress={reset} title={"Reset"} />
     </View>
